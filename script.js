@@ -234,24 +234,13 @@ function initNavbar() {
 function initHero() {
   const heroDate = document.getElementById('heroDate');
   
-  // ✅ On affiche le TEXTE depuis eventDateDisplay
   if (heroDate) {
+    // ✅ On affiche simplement le texte depuis CONFIG
+    // Supprime tout le bloc new Date() / options / toLocaleDateString
     heroDate.textContent = CONFIG.eventDateDisplay;
   }
-
-  // ✅ On utilise eventDate (format ISO) pour les calculs
-  const date = new Date(CONFIG.eventDate);
-
-  const options = {
-    weekday: 'long',
-    year:    'numeric',
-    month:   'long',
-    day:     'numeric',
-  };
-
-  // 🔧 Changer "fr-FR" pour une autre locale si besoin
-  heroDate.textContent = date.toLocaleDateString('fr-FR', options);
 }
+
 
 
 /* ============================================================
@@ -1115,6 +1104,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

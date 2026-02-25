@@ -60,8 +60,8 @@ const PARTICIPANTS = [
     photo: "",               // 🔧 ex: "photos/alice.jpg"
     score: 0,              // 🔧 Score actuel
     previous: 0,           // 🔧 Score précédent
-    quote: "« Je ne perds jamais. Soit je gagne, soit j'apprends. »",
-    strengths: ["Stratégie", "Rapidité", "Sang-froid"],
+    quote: "«»",
+    strengths: ["", "", ""],
   },
   {
     id: 2,
@@ -70,8 +70,8 @@ const PARTICIPANTS = [
     photo: "",
     score: 0,
     previous: 0,
-    quote: "« Mon seul adversaire, c'est moi-même. (Et Alice.) »",
-    strengths: ["Endurance", "Tactique", "Humour"],
+    quote: "«»",
+    strengths: ["", "", ""],
   },
   {
     id: 3,
@@ -80,8 +80,8 @@ const PARTICIPANTS = [
     photo: "",
     score: 0,
     previous: 0,
-    quote: "« J'aurais dû lire le règlement avant. »",
-    strengths: ["Créativité", "Bluff", "Réseau"],
+    quote: "«»",
+    strengths: ["", "", ""],
   },
   {
     id: 4,
@@ -90,8 +90,8 @@ const PARTICIPANTS = [
     photo: "",
     score: 0,
     previous: 0,
-    quote: "« Je suis en mode bête de compétition. »",
-    strengths: ["Force mentale", "Surprise", "Intuition"],
+    quote: "«»",
+    strengths: ["", "", ""],
   },
   {
     id: 5,
@@ -100,8 +100,8 @@ const PARTICIPANTS = [
     photo: "",
     score: 0,
     previous: 0,
-    quote: "« Ce n'est pas la taille du chien dans la lutte... »",
-    strengths: ["Précision", "Focus", "Polyvalence"],
+    quote: "«»",
+    strengths: ["", "", ""],
   },
 ];
 
@@ -1105,6 +1105,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

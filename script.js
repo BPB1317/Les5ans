@@ -233,18 +233,12 @@ function initNavbar() {
 
 function initHero() {
   const heroDate = document.getElementById('heroDate');
-  const date     = new Date(CONFIG.eventDate); // 🔧 Date depuis CONFIG.eventDate
-
-  const options = {
-    weekday: 'long',
-    year:    'numeric',
-    month:   'long',
-    day:     'numeric',
-  };
-
-  // 🔧 Changer "fr-FR" pour une autre locale si besoin
-  heroDate.textContent = date.toLocaleDateString('fr-FR', options);
+  
+  if (heroDate) {
+    heroDate.textContent = CONFIG.eventDateDisplay; // ✅ Fonctionne maintenant
+  }
 }
+
 
 
 
@@ -1110,6 +1104,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

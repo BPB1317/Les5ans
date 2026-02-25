@@ -55,63 +55,53 @@ const CONFIG = {
 const PARTICIPANTS = [
   {
     id: 1,
-    name: "Alice",           // 🔧 Nom
+    name: "Aurélien",           // 🔧 Nom
     emoji: "🦁",
     photo: "",               // 🔧 ex: "photos/alice.jpg"
-    score: 142,              // 🔧 Score actuel
-    previous: 135,           // 🔧 Score précédent
+    score: 0,              // 🔧 Score actuel
+    previous: 0,           // 🔧 Score précédent
     quote: "« Je ne perds jamais. Soit je gagne, soit j'apprends. »",
     strengths: ["Stratégie", "Rapidité", "Sang-froid"],
   },
   {
     id: 2,
-    name: "Baptiste",
+    name: "Julien",
     emoji: "🐺",
     photo: "",
-    score: 128,
-    previous: 128,
+    score: 0,
+    previous: 0,
     quote: "« Mon seul adversaire, c'est moi-même. (Et Alice.) »",
     strengths: ["Endurance", "Tactique", "Humour"],
   },
   {
     id: 3,
-    name: "Camille",
+    name: "Manon",
     emoji: "🦊",
     photo: "",
-    score: 115,
-    previous: 120,
+    score: 0,
+    previous: 0,
     quote: "« J'aurais dû lire le règlement avant. »",
     strengths: ["Créativité", "Bluff", "Réseau"],
   },
   {
     id: 4,
-    name: "Dylan",
+    name: "Matthieu",
     emoji: "🐻",
     photo: "",
-    score: 98,
-    previous: 85,
+    score: 0,
+    previous: 0,
     quote: "« Je suis en mode bête de compétition. »",
     strengths: ["Force mentale", "Surprise", "Intuition"],
   },
   {
     id: 5,
-    name: "Emma",
+    name: "Sylvain",
     emoji: "🦅",
     photo: "",
-    score: 87,
-    previous: 90,
+    score: 0,
+    previous: 0,
     quote: "« Ce n'est pas la taille du chien dans la lutte... »",
     strengths: ["Précision", "Focus", "Polyvalence"],
-  },
-  {
-    id: 6,
-    name: "Félix",
-    emoji: "🐉",
-    photo: "",
-    score: 74,
-    previous: 60,
-    quote: "« Mon épreuve forte arrive, je le sens. »",
-    strengths: ["Régularité", "Esprit d'équipe", "Rigolade"],
   },
 ];
 
@@ -1102,5 +1092,6 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 

@@ -26,9 +26,6 @@ const CONFIG = {
   // Format : "YYYY-MM-DDTHH:MM:SS"
   eventDate: "2026-03-07T10:00:00",
 
-     // ✅ AJOUT — Texte de la date affiché dans le hero
-  eventDateDisplay: "Samedi 7 & Dimanche 8 Mars 2026",
-
   // 🔧 Mettre à true pour révéler la section "Vainqueur"
   showWinner: false,
 
@@ -186,7 +183,7 @@ const SCHEDULE = [
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
-  ero();
+  initHero();
   initCountdown();
   initParticles();
   initClassement();
@@ -233,14 +230,18 @@ function initNavbar() {
 
 function initHero() {
   const heroDate = document.getElementById('heroDate');
-  
-  if (heroDate) {
-    heroDate.textContent = CONFIG.eventDateDisplay; // ✅ Fonctionne maintenant
-  }
+  const date     = new Date(CONFIG.eventDate); // 🔧 Date depuis CONFIG.eventDate
+
+  const options = {
+    weekday: 'long',
+    year:    'numeric',
+    month:   'long',
+    day:     'numeric',
+  };
+
+  // 🔧 Changer "fr-FR" pour une autre locale si besoin
+  heroDate.textContent = date.toLocaleDateString('fr-FR', options);
 }
-
-
-
 
 
 /* ============================================================
@@ -1104,10 +1105,3 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
-
-
-
-
-
-
-

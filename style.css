@@ -1024,3 +1024,27 @@ a {
   .countdown { gap: 0.3rem; }
   .countdown-sep { font-size: 1.3rem; }
 }
+
+.timeline-card-locked {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.timeline-locked-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.4rem 0;
+}
+
+.timeline-lock-icon {
+  font-size: 1.3rem;
+}
+
+.timeline-locked-label {
+  font-style: italic;
+  color: #888;
+  font-size: 0.9rem;
+}
+

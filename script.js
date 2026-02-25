@@ -186,7 +186,7 @@ const SCHEDULE = [
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
-  initHero();
+  ero();
   initCountdown();
   initParticles();
   initClassement();
@@ -233,7 +233,14 @@ function initNavbar() {
 
 function initHero() {
   const heroDate = document.getElementById('heroDate');
-  const date     = new Date(CONFIG.eventDateDisplay); // 🔧 Date depuis CONFIG.eventDateDisplay
+  
+  // ✅ On affiche le TEXTE depuis eventDateDisplay
+  if (heroDate) {
+    heroDate.textContent = CONFIG.eventDateDisplay;
+  }
+
+  // ✅ On utilise eventDate (format ISO) pour les calculs
+  const date = new Date(CONFIG.eventDate);
 
   const options = {
     weekday: 'long',
@@ -1108,5 +1115,6 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 

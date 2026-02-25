@@ -468,20 +468,33 @@ function initProgramme() {
         badge = `<span class="timeline-badge badge-locked">Verrouillé</span>`;
     }
 
-    div.innerHTML = `
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="timeline-header">
-          <span class="timeline-time">${item.time}</span>
-          ${badge}
+    // ✅ Contenu différent si locked
+    if (item.status === 'locked') {
+      div.innerHTML = `
+        <div class="timeline-dot"></div>
+        <div class="timeline-card timeline-card-locked">
+          <div class="timeline-locked-content">
+            <span class="timeline-lock-icon">🔒</span>
+            <span class="timeline-locked-label">Contenu verrouillé</span>
+          </div>
         </div>
-        <div class="timeline-title">
-          <span class="timeline-icon">${icon}</span>
-          <span>${item.title}</span>
+      `;
+    } else {
+      div.innerHTML = `
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-time">${item.time}</span>
+            ${badge}
+          </div>
+          <div class="timeline-title">
+            <span class="timeline-icon">${icon}</span>
+            <span>${item.title}</span>
+          </div>
+          ${item.desc ? `<p class="timeline-desc">${item.desc}</p>` : ''}
         </div>
-        ${item.desc ? `<p class="timeline-desc">${item.desc}</p>` : ''}
-      </div>
-    `;
+      `;
+    }
 
     timeline.appendChild(div);
   });
@@ -1092,6 +1105,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

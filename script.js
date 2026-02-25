@@ -26,6 +26,9 @@ const CONFIG = {
   // Format : "YYYY-MM-DDTHH:MM:SS"
   eventDate: "2026-03-07T10:00:00",
 
+     // ✅ AJOUT — Texte de la date affiché dans le hero
+  eventDateDisplay: "Samedi 7 & Dimanche 8 Mars 2026",
+
   // 🔧 Mettre à true pour révéler la section "Vainqueur"
   showWinner: false,
 
@@ -1107,6 +1110,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

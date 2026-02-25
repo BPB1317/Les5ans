@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Olympiade des Amis</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Police Google Fonts chargée sans CDN JS externe -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-logo">⚡ OLYMPIADE</div>
+    <ul class="nav-links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#classement">Classement</a></li>
+      <li><a href="#programme">Programme</a></li>
+      <li><a href="#participants">Participants</a></li>
+    </ul>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO / ACCUEIL ===================== -->
+  <section id="accueil" class="hero">
+    <div class="hero-bg-overlay"></div>
+
+    <!-- Particules décoratives -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <!-- 🔧 Modifier le nom de l'événement ici -->
+      <p class="hero-eyebrow">✦ Édition 2025 ✦</p>
+      <h1 class="hero-title">L'Olympiade<br /><span class="gold">des Amis</span></h1>
+
+      <!-- 🔧 La date est gérée dans script.js > CONFIG.eventDate -->
+      <p class="hero-date" id="heroDate">Chargement...</p>
+
+      <div class="countdown-wrapper">
+        <div class="countdown-label">Début dans</div>
+        <div class="countdown" id="countdown">
+          <div class="countdown-block">
+            <span class="countdown-num" id="cd-days">00</span>
+            <span class="countdown-unit">Jours</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-block">
+            <span class="countdown-num" id="cd-hours">00</span>
+            <span class="countdown-unit">Heures</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-block">
+            <span class="countdown-num" id="cd-minutes">00</span>
+            <span class="countdown-unit">Min</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-block">
+            <span class="countdown-num" id="cd-seconds">00</span>
+            <span class="countdown-unit">Sec</span>
+          </div>
+        </div>
+        <div class="countdown-finished hidden" id="countdownFinished">
+          🔥 L'événement est EN COURS ! 🔥
+        </div>
+      </div>
+
+      <div class="hero-tagline">
+        <span>6 Participants</span>
+        <span class="separator">·</span>
+        <span>12 Épreuves</span>
+        <span class="separator">·</span>
+        <span>1 Vainqueur</span>
+      </div>
+
+      <a href="#classement" class="btn-gold">
+        Voir le Classement <span class="btn-arrow">→</span>
+      </a>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Défiler</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CLASSEMENT ===================== -->
+  <section id="classement" class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">Standings</p>
+      <h2 class="section-title">Classement <span class="gold">en direct</span></h2>
+    </div>
+
+    <!-- Podium visuel Top 3 -->
+    <div class="podium-wrapper">
+      <div class="podium-container" id="podiumContainer">
+        <!-- Généré par JS -->
+      </div>
+    </div>
+
+    <!-- Tableau complet -->
+    <div class="table-wrapper">
+      <table class="score-table" id="scoreTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Participant</th>
+            <th>Score</th>
+            <th>Évolution</th>
+          </tr>
+        </thead>
+        <tbody id="scoreTableBody">
+          <!-- Généré par JS -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===================== PROGRAMME ===================== -->
+  <section id="programme" class="section section-dark">
+    <div class="section-header">
+      <p class="section-eyebrow">Schedule</p>
+      <h2 class="section-title">Programme <span class="gold">de la journée</span></h2>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <!-- Généré par JS -->
+    </div>
+  </section>
+
+  <!-- ===================== PARTICIPANTS ===================== -->
+  <section id="participants" class="section">
+    <div class="section-header">
+      <p class="section-eyebrow">The Players</p>
+      <h2 class="section-title">Les <span class="gold">Participants</span></h2>
+    </div>
+
+    <div class="participants-grid" id="participantsGrid">
+      <!-- Généré par JS -->
+    </div>
+  </section>
+
+  <!-- ===================== VICTOIRE FINALE (cachée par défaut) ===================== -->
+  <!-- 🔧 Révélée via CONFIG.showWinner = true dans script.js -->
+  <section id="victoire" class="section section-victory hidden">
+    <div class="victory-content">
+      <p class="section-eyebrow">👑 Vainqueur Officiel 👑</p>
+      <h2 class="victory-title" id="victoryTitle">Félicitations !</h2>
+      <p class="victory-subtitle" id="victorySubtitle"></p>
+      <div class="victory-trophy">🏆</div>
+      <p class="victory-score" id="victoryScore"></p>
+    </div>
+    <!-- Confettis générés par JS -->
+    <canvas id="confettiCanvas"></canvas>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <p>⚡ L'Olympiade des Amis · Édition 2025</p>
+    <p class="footer-sub">Fait avec ❤️ et beaucoup de compétition</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

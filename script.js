@@ -186,7 +186,7 @@ const SCHEDULE = [
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
-  initHero();
+  initHeroDate();
   initCountdown();
   initParticles();
   initClassement();
@@ -1102,4 +1102,5 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 

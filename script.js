@@ -20,11 +20,11 @@
 
 const CONFIG = {
   // 🔧 Nom affiché dans la section victoire
-  eventName: "L'Olympiade des Amis",
+  eventName: "Les 5 ans",
 
   // 🔧 Date et heure de début de l'événement (ISO 8601)
   // Format : "YYYY-MM-DDTHH:MM:SS"
-  eventDate: "2025-08-16T09:00:00",
+  eventDate: "2026-03-07T10:00:00",
 
   // 🔧 Mettre à true pour révéler la section "Vainqueur"
   showWinner: false,

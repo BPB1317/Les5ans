@@ -233,7 +233,7 @@ function initNavbar() {
 
 function initHero() {
   const heroDate = document.getElementById('heroDate');
-  const date     = new Date(CONFIG.eventDate); // 🔧 Date depuis CONFIG.eventDate
+  const date     = new Date(CONFIG.eventDateDisplay); // 🔧 Date depuis CONFIG.eventDateDisplay
 
   const options = {
     weekday: 'long',
@@ -1108,4 +1108,5 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 

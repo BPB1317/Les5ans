@@ -26,9 +26,6 @@ const CONFIG = {
   // Format : "YYYY-MM-DDTHH:MM:SS"
   eventDate: "2026-03-07T10:00:00",
 
-  // 🔧 Texte affiché sur la page d'accueil (modifiable librement)
-  eventDateDisplay: "Samedi 7 & Dimanche 8 Mars 2026",   
-
   // 🔧 Mettre à true pour révéler la section "Vainqueur"
   showWinner: false,
 
@@ -233,13 +230,19 @@ function initNavbar() {
 
 function initHero() {
   const heroDate = document.getElementById('heroDate');
-  
-  if (heroDate) {
-    // ✅ On affiche simplement le texte depuis CONFIG
-    // Supprime tout le bloc new Date() / options / toLocaleDateString
-    heroDate.textContent = CONFIG.eventDateDisplay;
-  }
+  const date     = new Date(CONFIG.eventDate); // 🔧 Date depuis CONFIG.eventDate
+
+  const options = {
+    weekday: 'long',
+    year:    'numeric',
+    month:   'long',
+    day:     'numeric',
+  };
+
+  // 🔧 Changer "fr-FR" pour une autre locale si besoin
+  heroDate.textContent = date.toLocaleDateString('fr-FR', options);
 }
+
 
 
 
@@ -1104,6 +1107,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

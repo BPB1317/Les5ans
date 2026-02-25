@@ -123,19 +123,19 @@ const SCHEDULE = [
     time: "9h00",
     title: "Accueil & Briefing",
     desc: "Arrivée des participants, remise des dossards et présentation des règles.",
-    status: "done",           // 🔧 Changer le statut ici
+    status: "locked",           // 🔧 Changer le statut ici
   },
   {
     time: "10h00",
     title: "Épreuve 1 — Sprint Cérébral",
     desc: "Questions culture générale chronométrées. 30 secondes par question.",
-    status: "done",
+    status: "locked",
   },
   {
     time: "11h30",
     title: "Épreuve 2 — Défi Physique",
     desc: "Parcours d'obstacles surprise. Tenue sportive obligatoire.",
-    status: "active",         // 🔧 Épreuve actuellement en cours
+    status: "locked",         // 🔧 Épreuve actuellement en cours
   },
   {
     time: "13h00",
@@ -1105,6 +1105,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

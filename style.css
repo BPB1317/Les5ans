@@ -1149,4 +1149,10 @@ a {
   transition: color 0.2s;
 }
 
+#checklist .container {
+  max-width: 750px;      /* ✅ Largeur max centrée */
+  margin: 0 auto;
+}
+
+
 

@@ -1048,3 +1048,105 @@ a {
   font-size: 0.9rem;
 }
 
+/* ============================================================
+   CHECKLIST
+   ============================================================ */
+#checklist {
+  padding: 5rem 0;
+}
+
+.checklist-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  border-radius: 16px;
+  padding: 1.8rem 2rem;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s;
+}
+
+.checklist-card:hover {
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+/* Catégorie avec bordure or */
+.checklist-highlight {
+  border-color: rgba(255, 215, 0, 0.6);
+  background: rgba(255, 215, 0, 0.05);
+}
+
+.checklist-category {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.checklist-subsection {
+  margin-bottom: 1rem;
+}
+
+.checklist-sublabel {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+/* Item cochable */
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  user-select: none;
+}
+
+.checklist-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.checklist-item input[type="checkbox"] {
+  display: none; /* Caché — remplacé par .checklist-check */
+}
+
+.checklist-check {
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: transparent;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+/* ✅ Case cochée */
+.checklist-item.checked .checklist-check {
+  background: #ffd700;
+  border-color: #ffd700;
+  color: #000;
+}
+
+.checklist-item.checked .checklist-label {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.checklist-label {
+  font-size: 0.95rem;
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+

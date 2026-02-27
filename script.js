@@ -182,10 +182,7 @@ const CHECKLIST = [
       "Carte bancaire",
       "Téléphone",
       "Chargeur téléphone",
-      "Batterie externe",
-      "Écouteurs",
       "Sac week-end / valise",
-      "Petit sac à dos (pour samedi en journée)",
     ],
   },
   {
@@ -195,18 +192,18 @@ const CHECKLIST = [
       {
         label: "Tenue casual (vendredi / moments chill)",
         items: [
-          "Jean / chino",
+          "Jean / chino / short",
           "T-shirt / polo",
           "Pull ou veste légère",
-          "Sneakers propres",
+          "Sneakers",
         ],
       },
       {
-        label: "Tenue habillée (sortie samedi soir)",
+        label: "Tenue habillée (sortie samedi soir (?))",
         items: [
-          "Chemise ou polo premium",
-          "Pantalon propre (chino / noir / costume léger)",
-          "Chaussures propres (derbies / baskets chic)",
+          "Chemise ou polo",
+          "Pantalon ou chino",
+          "Chaussures (derbies / baskets chic)",
           "Veste ou blazer léger (optionnel mais recommandé)",
         ],
       },
@@ -214,8 +211,8 @@ const CHECKLIST = [
         label: "Tenue sport / marche / rando",
         items: [
           "Baskets confortables",
-          "Pantalon confortable / jogging",
-          "T-shirt respirant",
+          "Pantalon confortable / jogging / short",
+          "T-shirt",
           "Sweat / coupe-vent",
           "Chaussettes adaptées",
           "Lunettes de soleil",
@@ -229,26 +226,24 @@ const CHECKLIST = [
     icon: "👕",
     highlight: true, // 🔧 Met en avant cette catégorie (bordure dorée)
     items: [
-      "Maillot SAS Betting",
-      "Casquette",
-      "Polo Cercle Brugge",
-      "Polo / maillot Arsenal",
-      "Polo / maillot Real Sociedad",
-      "Polo / maillot Club Brugge",
+      "Maillots / Polos / Casquettes SAS Betting",
+      "Cercle Brugge",
+      "Arsenal",
+      "Real Sociedad",
+      "Club Brugge",
     ],
   },
   {
     category: "4️⃣ Trousse de toilette",
     icon: "🧴",
+    note : "✔ Les draps et serviettes de toilette sont fournis."
     items: [
       "Brosse à dents",
       "Dentifrice",
+      "Gel / Cire cheveux"
       "Déodorant",
       "Gel douche",
       "Parfum",
-      "Rasoir (si besoin)",
-      "Médicaments personnels",
-      "Pansements",
     ],
   },
   {
@@ -256,13 +251,9 @@ const CHECKLIST = [
     icon: "🧢",
     items: [
       "Gourde",
-      "Parapluie (au cas où)",
-      "Crème solaire (si marche au soleil)",
       "Lunettes de soleil",
       "Pyjama",
-      "Sous-vêtements x2 jours",
-      "Chaussettes supplémentaires",
-      "Sac pour linge sale",
+      "Sous-vêtements x3 jours",
     ],
   },
   {
@@ -271,7 +262,6 @@ const CHECKLIST = [
     items: [
       "Bonne humeur",
       "Esprit compétitif",
-      "Disponibilité",
       "Respect du timing",
       "Pas de retardataires 😄",
     ],
@@ -1279,6 +1269,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

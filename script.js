@@ -169,6 +169,179 @@ const SCHEDULE = [
   },
 ];
 
+// ============================================================
+// CHECKLIST — DONNÉES
+// 🔧 Modifier ici les catégories et items
+// ============================================================
+const CHECKLIST = [
+  {
+    category: "1️⃣ Indispensables",
+    icon: "🎒",
+    items: [
+      "Carte d'identité / permis",
+      "Carte bancaire",
+      "Téléphone",
+      "Chargeur téléphone",
+      "Batterie externe",
+      "Écouteurs",
+      "Sac week-end / valise",
+      "Petit sac à dos (pour samedi en journée)",
+    ],
+  },
+  {
+    category: "2️⃣ Tenues obligatoires",
+    icon: "👕",
+    subsections: [
+      {
+        label: "Tenue casual (vendredi / moments chill)",
+        items: [
+          "Jean / chino",
+          "T-shirt / polo",
+          "Pull ou veste légère",
+          "Sneakers propres",
+        ],
+      },
+      {
+        label: "Tenue habillée (sortie samedi soir)",
+        items: [
+          "Chemise ou polo premium",
+          "Pantalon propre (chino / noir / costume léger)",
+          "Chaussures propres (derbies / baskets chic)",
+          "Veste ou blazer léger (optionnel mais recommandé)",
+        ],
+      },
+      {
+        label: "Tenue sport / marche / rando",
+        items: [
+          "Baskets confortables",
+          "Pantalon confortable / jogging",
+          "T-shirt respirant",
+          "Sweat / coupe-vent",
+          "Chaussettes adaptées",
+          "Lunettes de soleil",
+          "Casquette (si soleil)",
+        ],
+      },
+    ],
+  },
+  {
+    category: "3️⃣ SAS Betting Goodies",
+    icon: "👕",
+    highlight: true, // 🔧 Met en avant cette catégorie (bordure dorée)
+    items: [
+      "Maillot SAS Betting",
+      "Casquette",
+      "Polo Cercle Brugge",
+      "Polo / maillot Arsenal",
+      "Polo / maillot Real Sociedad",
+      "Polo / maillot Club Brugge",
+    ],
+  },
+  {
+    category: "4️⃣ Trousse de toilette",
+    icon: "🧴",
+    items: [
+      "Brosse à dents",
+      "Dentifrice",
+      "Déodorant",
+      "Gel douche",
+      "Parfum",
+      "Rasoir (si besoin)",
+      "Médicaments personnels",
+      "Pansements",
+    ],
+  },
+  {
+    category: "5️⃣ Bonus utiles",
+    icon: "🧢",
+    items: [
+      "Gourde",
+      "Parapluie (au cas où)",
+      "Crème solaire (si marche au soleil)",
+      "Lunettes de soleil",
+      "Pyjama",
+      "Sous-vêtements x2 jours",
+      "Chaussettes supplémentaires",
+      "Sac pour linge sale",
+    ],
+  },
+  {
+    category: "6️⃣ Esprit & attitude",
+    icon: "📸",
+    items: [
+      "Bonne humeur",
+      "Esprit compétitif",
+      "Disponibilité",
+      "Respect du timing",
+      "Pas de retardataires 😄",
+    ],
+  },
+];
+
+// ============================================================
+// CHECKLIST — FONCTION D'AFFICHAGE
+// ============================================================
+function initChecklist() {
+  const container = document.getElementById('checklist-container');
+  if (!container) return;
+
+  container.innerHTML = CHECKLIST.map(cat => {
+
+    // Génère les items simples
+    const renderItems = (items) =>
+      items.map(item => `
+        <label class="checklist-item">
+          <input type="checkbox" />
+          <span class="checklist-check">✓</span>
+          <span class="checklist-label">${item}</span>
+        </label>
+      `).join('');
+
+    // Génère les sous-sections (tenues)
+    const renderSubsections = (subsections) =>
+      subsections.map(sub => `
+        <div class="checklist-subsection">
+          <p class="checklist-sublabel">👉 ${sub.label}</p>
+          ${renderItems(sub.items)}
+        </div>
+      `).join('');
+
+    return `
+      <div class="checklist-card ${cat.highlight ? 'checklist-highlight' : ''}">
+        <div class="checklist-category">
+          <span>${cat.icon}</span>
+          <span>${cat.category}</span>
+        </div>
+        ${cat.subsections
+          ? renderSubsections(cat.subsections)
+          : renderItems(cat.items)
+        }
+      </div>
+    `;
+  }).join('');
+
+  // ✅ Sauvegarde des cases cochées dans localStorage
+  const checkboxes = container.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach((cb, i) => {
+    // Restaurer l'état sauvegardé
+    cb.checked = localStorage.getItem(`check-${i}`) === 'true';
+    updateItemStyle(cb);
+
+    cb.addEventListener('change', () => {
+      localStorage.setItem(`check-${i}`, cb.checked);
+      updateItemStyle(cb);
+    });
+  });
+}
+
+// Style visuel quand une case est cochée
+function updateItemStyle(cb) {
+  const label = cb.closest('.checklist-item');
+  if (!label) return;
+  label.classList.toggle('checked', cb.checked);
+}
+
+
 
 /* ============================================================
    ██████████ INITIALISATION ████████████
@@ -182,6 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initClassement();
   initProgramme();
   initParticipants();
+  initChecklist();
   initVictoire();
   initScrollAnimations();
 });
@@ -1105,6 +1279,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

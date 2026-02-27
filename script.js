@@ -236,7 +236,7 @@ const CHECKLIST = [
   {
     category: "4️⃣ Trousse de toilette",
     icon: "🧴",
-    note : "✔ Les draps et serviettes de toilette sont fournis."
+    note : "✔ Les draps et serviettes de toilette sont fournis.",
     items: [
       "Brosse à dents",
       "Dentifrice",
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

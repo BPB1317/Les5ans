@@ -263,7 +263,6 @@ const CHECKLIST = [
       "Bonne humeur",
       "Esprit compétitif",
       "Respect du timing",
-      "Pas de retardataires 😄",
     ],
   },
 ];
@@ -1269,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

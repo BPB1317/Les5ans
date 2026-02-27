@@ -1155,4 +1155,15 @@ a {
 }
 
 
+.checklist-note {
+  font-size: 0.85rem;
+  color: #4caf50;          /* vert */
+  background: rgba(76, 175, 80, 0.08);
+  border-left: 3px solid #4caf50;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
 

@@ -240,7 +240,7 @@ const CHECKLIST = [
     items: [
       "Brosse à dents",
       "Dentifrice",
-      "Gel / Cire cheveux"
+      "Gel / Cire cheveux",
       "Déodorant",
       "Gel douche",
       "Parfum",
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

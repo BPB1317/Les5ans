@@ -70,7 +70,7 @@ const PARTICIPANTS = [
     photo: "",
     score: 0,
     previous: 0,
-    quote: "«»",
+    quote: "«La 206 : la voiture de l'avenir»",
     strengths: ["", "", ""],
   },
   {
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

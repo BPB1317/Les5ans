@@ -67,7 +67,7 @@ const PARTICIPANTS = [
     id: 2,
     name: "Julien",
     emoji: "🐺",
-    photo: "",
+    photo: "Julien.png",
     score: 0,
     previous: 0,
     quote: "«La 206 : la voiture de l'avenir»",
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

@@ -60,8 +60,8 @@ const PARTICIPANTS = [
     photo: "Aurélien.png",               // 🔧 ex: "photos/alice.jpg"
     score: 0,              // 🔧 Score actuel
     previous: 0,           // 🔧 Score précédent
-    quote: "«»",
-    strengths: ["", "", ""],
+    quote: "«L'erreur est humaine, le pardon est divin»",
+    strengths: ["Curieux", "Adaptable", "Empathique"],
   },
   {
     id: 2,
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

@@ -71,7 +71,7 @@ const PARTICIPANTS = [
     score: 0,
     previous: 0,
     quote: "«La 206 : la voiture de l'avenir»",
-    strengths: ["", "", ""],
+    strengths: ["Adaptabilité", "Force mentale", "Gestion des conflits"],
   },
   {
     id: 3,
@@ -120,33 +120,33 @@ const PARTICIPANTS = [
 
 const SCHEDULE = [
   {
-    time: "9h00",
-    title: "Accueil & Briefing",
-    desc: "Arrivée des participants, remise des dossards et présentation des règles.",
-    status: "locked",           // 🔧 Changer le statut ici
+    time: "08h30",
+    title: "Petit déj + Organisation bouuuuffe 🍗",
+    desc: "",
+    status: "active",           // 🔧 Changer le statut ici
   },
   {
-    time: "10h00",
-    title: "Épreuve 1 — Sprint Cérébral",
-    desc: "Questions culture générale chronométrées. 30 secondes par question.",
+    time: "09h15",
+    title: "Couuurses 🏪",
+    desc: "",
     status: "locked",
   },
   {
-    time: "11h30",
-    title: "Épreuve 2 — Défi Physique",
-    desc: "Parcours d'obstacles surprise. Tenue sportive obligatoire.",
+    time: "10h00",
+    title: "Arrivée de Sylvain 🙋🏻‍♂️",
+    desc: "",
     status: "locked",         // 🔧 Épreuve actuellement en cours
   },
   {
-    time: "13h00",
-    title: "Pause Déjeuner",
-    desc: "Repas commun. Récupération et stratégie.",
+    time: "10h30",
+    title: "Début de l'expérience - Premier interrogatoire 🤫",
+    desc: "",
     status: "locked",         // 🔧 Pas encore débloqué
   },
   {
-    time: "14h30",
-    title: "Mission Secrète 🤫",
-    desc: "Contenu révélé uniquement aux participants qualifiés.",
+    time: "11h00",
+    title: "Premier jeu par équipe",
+    desc: "",
     status: "locked",
   },
   {
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

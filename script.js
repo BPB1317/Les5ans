@@ -106,8 +106,8 @@ const PARTICIPANTS = [
   {
     id: 6,
     name: "Kévin",
-    emoji: "🦅",
-    photo: "",
+    emoji: "",
+    photo: "Kevin.png",
     score: 0,
     previous: 0,
     quote: "«Mon seul ennemi, c'est moi-même»",
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

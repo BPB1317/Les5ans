@@ -123,7 +123,7 @@ const SCHEDULE = [
     time: "08h30",
     title: "Petit déj + Organisation bouuuuffe 🍗",
     desc: "",
-    status: "active",           // 🔧 Changer le statut ici
+    status: "locked",           // 🔧 Changer le statut ici
   },
   {
     time: "09h15",
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

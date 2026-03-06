@@ -80,7 +80,7 @@ const PARTICIPANTS = [
     photo: "Manon.png",
     score: 0,
     previous: 0,
-    quote: "«»",
+    quote: "«Seule contre tous»",
     strengths: ["", "", ""],
   },
   {
@@ -123,25 +123,25 @@ const SCHEDULE = [
     time: "08h30",
     title: "Petit déj + Organisation bouuuuffe 🍗",
     desc: "",
-    status: "locked",           // 🔧 Changer le statut ici
+    status: "active",           // 🔧 Changer le statut ici
   },
   {
     time: "09h15",
     title: "Couuurses 🏪",
     desc: "",
-    status: "locked",
+    status: "active",
   },
   {
     time: "10h00",
     title: "Arrivée de Sylvain 🙋🏻‍♂️",
     desc: "",
-    status: "locked",         // 🔧 Épreuve actuellement en cours
+    status: "active",         // 🔧 Épreuve actuellement en cours
   },
   {
     time: "10h30",
     title: "Début de l'expérience - Premier interrogatoire 🤫",
     desc: "",
-    status: "locked",         // 🔧 Pas encore débloqué
+    status: "active",         // 🔧 Pas encore débloqué
   },
   {
     time: "11h00",
@@ -1268,6 +1268,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

@@ -81,7 +81,7 @@ const PARTICIPANTS = [
     score: 0,
     previous: 0,
     quote: "«Seule contre tous»",
-    strengths: ["", "", ""],
+    strengths: ["Patiente", "Souriante", "Régularité"],
   },
   {
     id: 4,
@@ -91,7 +91,7 @@ const PARTICIPANTS = [
     score: 0,
     previous: 0,
     quote: "«Impossible n'est pas français»",
-    strengths: ["", "", ""],
+    strengths: ["Minutieux", "Polyvalent", "Anticipation des problèmes"],
   },
   {
     id: 5,
@@ -102,6 +102,16 @@ const PARTICIPANTS = [
     previous: 0,
     quote: "«»",
     strengths: ["", "", ""],
+  },
+  {
+    id: 6,
+    name: "Kévin",
+    emoji: "🦅",
+    photo: "",
+    score: 0,
+    previous: 0,
+    quote: "«Mon seul ennemi, c'est moi-même»",
+    strengths: ["Ambitieux", "Stratégique", "Parieur"],
   },
 ];
 
@@ -1268,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

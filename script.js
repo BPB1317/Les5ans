@@ -78,7 +78,7 @@ const PARTICIPANTS = [
     name: "Manon",
     emoji: "🦊",
     photo: "Manon.png",
-    score: 0,
+    score: 17,
     previous: 0,
     quote: "«Seule contre tous»",
     strengths: ["Patiente", "Souriante", "Régularité"],
@@ -88,7 +88,7 @@ const PARTICIPANTS = [
     name: "Matthieu",
     emoji: "🐻",
     photo: "Matthieu.png",
-    score: 0,
+    score: 17,
     previous: 0,
     quote: "«Impossible n'est pas français»",
     strengths: ["Minutieux", "Polyvalent", "Anticipation des problèmes"],
@@ -98,7 +98,7 @@ const PARTICIPANTS = [
     name: "Sylvain",
     emoji: "🦅",
     photo: "Sylvain.png",
-    score: 0,
+    score: 17,
     previous: 0,
     quote: "«»",
     strengths: ["", "", ""],
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

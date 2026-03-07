@@ -24,7 +24,7 @@ const CONFIG = {
 
   // 🔧 Date et heure de début de l'événement (ISO 8601)
   // Format : "YYYY-MM-DDTHH:MM:SS"
-  eventDate: "2026-03-07T10:00:00",
+  eventDate: "2026-03-07T10:30:00",
    
   // 🔧 Texte affiché sur la page d'accueil (modifiable librement)
   eventDateDisplay: "Samedi 7 & Dimanche 8 Mars 2026",
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

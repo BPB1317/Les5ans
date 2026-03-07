@@ -157,25 +157,25 @@ const SCHEDULE = [
     time: "11h00",
     title: "Premier jeu par équipe",
     desc: "",
-    status: "locked",
+    status: "active",
   },
   {
-    time: "16h00",
-    title: "Épreuve Créative",
-    desc: "Réalisation d'un défi artistique en équipe.",
-    status: "locked",
+    time: "14h30",
+    title: "Deuxième jeu par équipe + Interrogatoire",
+    desc: "",
+    status: "active",
   },
   {
-    time: "17h30",
-    title: "Duel Final ⚔️",
-    desc: "Les 2 meilleurs s'affrontent. Le reste vote.",
-    status: "locked",
+    time: "15h10",
+    title: "Ecosse - France 🏉",
+    desc: "",
+    status: "active",
   },
   {
-    time: "19h00",
-    title: "Cérémonie de Clôture 🏆",
-    desc: "Remise des prix, discours, et photo souvenir.",
-    status: "locked",
+    time: "17h00",
+    title: "Premier jeu solo",
+    desc: "",
+    status: "active",
   },
 ];
 
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

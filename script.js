@@ -58,7 +58,7 @@ const PARTICIPANTS = [
     name: "Aurélien",           // 🔧 Nom
     emoji: "🦁",
     photo: "Aurélien.png",               // 🔧 ex: "photos/alice.jpg"
-    score: 0,              // 🔧 Score actuel
+    score: 20,              // 🔧 Score actuel
     previous: 0,           // 🔧 Score précédent
     quote: "«L'erreur est humaine, le pardon est divin»",
     strengths: ["Curieux", "Adaptable", "Empathique"],
@@ -78,7 +78,7 @@ const PARTICIPANTS = [
     name: "Manon",
     emoji: "🦊",
     photo: "Manon.png",
-    score: 17,
+    score: 37,
     previous: 0,
     quote: "«Seule contre tous»",
     strengths: ["Patiente", "Souriante", "Régularité"],
@@ -88,7 +88,7 @@ const PARTICIPANTS = [
     name: "Matthieu",
     emoji: "🐻",
     photo: "Matthieu.png",
-    score: 17,
+    score: 37,
     previous: 0,
     quote: "«Impossible n'est pas français»",
     strengths: ["Minutieux", "Polyvalent", "Anticipation des problèmes"],
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

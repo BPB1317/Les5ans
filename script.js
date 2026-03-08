@@ -58,8 +58,8 @@ const PARTICIPANTS = [
     name: "Aurélien",           // 🔧 Nom
     emoji: "🦁",
     photo: "Aurélien.png",               // 🔧 ex: "photos/alice.jpg"
-    score: 57,              // 🔧 Score actuel
-    previous: 32,           // 🔧 Score précédent
+    score: 75,              // 🔧 Score actuel
+    previous: 57,           // 🔧 Score précédent
     quote: "«L'erreur est humaine, le pardon est divin»",
     strengths: ["Curieux", "Adaptable", "Empathique"],
   },
@@ -69,7 +69,7 @@ const PARTICIPANTS = [
     emoji: "🐺",
     photo: "Julien.png",
     score: 31,
-    previous: 18,
+    previous: 31,
     quote: "«La 206 : la voiture de l'avenir»",
     strengths: ["Adaptabilité", "Force mentale", "Gestion des conflits"],
   },
@@ -79,7 +79,7 @@ const PARTICIPANTS = [
     emoji: "🦊",
     photo: "Manon.png",
     score: 72,
-    previous: 49,
+    previous: 72,
     quote: "«Seule contre tous»",
     strengths: ["Patiente", "Souriante", "Régularité"],
   },
@@ -88,8 +88,8 @@ const PARTICIPANTS = [
     name: "Matthieu",
     emoji: "🐻",
     photo: "Matthieu.png",
-    score: 56,
-    previous: 48,
+    score: 74,
+    previous: 56,
     quote: "«Impossible n'est pas français»",
     strengths: ["Minutieux", "Polyvalent", "Anticipation des problèmes"],
   },
@@ -99,7 +99,7 @@ const PARTICIPANTS = [
     emoji: "🦅",
     photo: "Sylvain.png",
     score: 31,
-    previous: 23,
+    previous: 31,
     quote: "«»",
     strengths: ["", "", ""],
   },
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

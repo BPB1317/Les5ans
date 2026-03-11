@@ -111,7 +111,7 @@ const PARTICIPANTS = [
     score: 0,
     previous: 0,
     quote: "«Mon seul ennemi, c'est moi-même»",
-    strengths: ["Ambitieux", "Stratégique", "Parieur"],
+    strengths: ["Ambitieux", "Stratégique", "Curieux"],
   },
 ];
 
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 

@@ -133,49 +133,49 @@ const SCHEDULE = [
     time: "08h30",
     title: "Petit déj + Organisation bouuuuffe 🍗",
     desc: "",
-    status: "active",           // 🔧 Changer le statut ici
+    status: "done",           // 🔧 Changer le statut ici
   },
   {
     time: "09h15",
     title: "Couuurses 🏪",
     desc: "",
-    status: "active",
+    status: "done",
   },
   {
     time: "10h00",
     title: "Arrivée de Sylvain 🙋🏻‍♂️",
     desc: "",
-    status: "active",         // 🔧 Épreuve actuellement en cours
+    status: "done",         // 🔧 Épreuve actuellement en cours
   },
   {
     time: "10h30",
     title: "Début de l'expérience - Premier interrogatoire 🤫",
     desc: "",
-    status: "active",         // 🔧 Pas encore débloqué
+    status: "done",         // 🔧 Pas encore débloqué
   },
   {
     time: "11h00",
     title: "Premier jeu par équipe",
     desc: "",
-    status: "active",
+    status: "done",
   },
   {
     time: "14h30",
     title: "Deuxième jeu par équipe + Interrogatoire",
     desc: "",
-    status: "active",
+    status: "done",
   },
   {
     time: "15h10",
     title: "Ecosse - France 🏉",
     desc: "",
-    status: "active",
+    status: "done",
   },
   {
     time: "17h00",
     title: "Premier jeu solo",
     desc: "",
-    status: "active",
+    status: "done",
   },
 ];
 
@@ -1278,6 +1278,7 @@ console.log(`
   ║  revealWinner("Nom")                    ║
   ╚══════════════════════════════════════════╝
 `);
+
 
 
 
